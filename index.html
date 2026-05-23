@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kshna Restaurant Menu | منيو كشنة</title>
+  <meta name="description" content="Digital menu for Kshna Restaurant - قائمة كشنة الإلكترونية" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="texture"></div>
+    <nav class="topbar">
+      <img src="assets/kr-logo.jpg" alt="Kshna Restaurant" class="logo small-logo" />
+      <div class="actions">
+        <button id="langBtn" class="pill">English</button>
+        <a href="#menu" class="pill primary" data-ar="المنيو" data-en="Menu">المنيو</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <img src="assets/arabic-logo.jpg" alt="كشنة" class="arabic-logo" />
+      <p class="eyebrow" data-ar="مطعم كشنة" data-en="Kshna Restaurant">مطعم كشنة</p>
+      <h1 data-ar="منيو بحري وخليجي بطابع فاخر" data-en="Seafood & Gulf Cuisine Menu">منيو بحري وخليجي بطابع فاخر</h1>
+      <p class="subtitle" data-ar="قائمة إلكترونية مرتبة من ملف المنيو الرسمي، مع بحث سريع وتصنيفات واضحة." data-en="A clean digital menu built from the official menu file, with quick search and clear categories.">قائمة إلكترونية مرتبة من ملف المنيو الرسمي، مع بحث سريع وتصنيفات واضحة.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="controls" id="menu">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="ابحث عن طبق..." data-ar-placeholder="ابحث عن طبق..." data-en-placeholder="Search for a dish..." />
+      </div>
+      <div id="categoryTabs" class="tabs"></div>
+    </section>
+    <section id="menuContainer" class="menu-container"></section>
+  </main>
+
+  <footer>
+    <img src="assets/kr-logo.jpg" alt="Kshna Restaurant" />
+    <p data-ar="KSHNA RESTAURANT — قائمة إلكترونية" data-en="KSHNA RESTAURANT — Digital Menu">KSHNA RESTAURANT — قائمة إلكترونية</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
